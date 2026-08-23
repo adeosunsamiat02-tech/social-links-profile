@@ -1,0 +1,58 @@
+html {
+    background-color: hsl(0, 0%, 8%);
+    font-size: 14px;
+    margin: 80px 20px 80px 20px;
+}
+
+main {
+    background-color: hsl(0, 0%, 12%);
+    color: white;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.circle {
+    width: 100px;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.location {
+    font-weight: 600;
+    color: hsl(75, 94%, 57%);
+}
+
+.bio {
+    font-weight: 400;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 600;}
+
+.links a {
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    display: block;
+    margin: 20px;
+}
+
+a:hover {
+   background-color: hsl(75, 57%, 24%);
+   color: #141414;
+}
