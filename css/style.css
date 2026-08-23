@@ -1,36 +1,51 @@
+/* VARIABLES */ 
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
 html {
-    background-color: hsl(0, 0%, 8%);
-    font-size: 14px;
+    background-color: var(--Grey-900);
     margin: 80px 20px 80px 20px;
 }
 
+body {
+    font-size: 0.875rem;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 1.25rem;
+    margin: 0;
+}
+
 main {
-    background-color: hsl(0, 0%, 12%);
-    color: white;
+    background-color: var(--Grey-800);
+    color: var(--White);
     font-size: 24px;
     font-family: 'Inter', sans-serif;
-    min-height: 100vh;
     max-width: 400px;
+    padding: 1.5rem;
     width: 100%;
     border-radius: 20px;
     text-align: center;
-    margin: 0 auto;
 }
 
 .circle {
     width: 100px;
     border-radius: 50px;
-    margin-top: 50px;
-    margin-bottom: 20px;
 }
 
 h1 {
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
 .location {
     font-weight: 600;
-    color: hsl(75, 94%, 57%);
+    color: var(--Green);
 }
 
 .bio {
@@ -41,20 +56,24 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    font-weight: 600;}
+    font-weight: 600;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
 .links a {
-    background-color: hsl(0, 0%, 20%);
-    color: hsl(0, 0%, 100%);
+    background-color: var(--Grey-700);
+    color: var(--white);
     text-decoration: none;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
     display: block;
-    margin: 20px;
 }
 
-a:hover {
-   background-color: hsl(75, 57%, 24%);
+.links a:hover,
+.links a:focus-visible {
+   background-color: var(--Green);
    color: #141414;
 }
